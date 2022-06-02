@@ -5,4 +5,4 @@ Para ello haría la clase Tweet a partir de las clases hijas.
 
 ### Pregunta d.2
 Sí debería modificarlo.
-Porque 
+No se como lo haría
