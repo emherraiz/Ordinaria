@@ -4,7 +4,6 @@ import plotly.figure_factory as ff
 from collections import Counter
 from datetime import date
 from PIL import Image
-from wordcloud import WordCloud, STOPWORDS, ImageColorGenerator
 import nltk
 from nltk.corpus import stopwords
 from tqdm import tqdm
