@@ -1,8 +1,19 @@
+class Muy_largo(BaseException): pass
+
+def validar_message(mensaje):
+    if len(mensaje) > 140:
+        raise Muy_largo
 class Tweet:
     def __init__(self, time, message, sender):
+        try:
+            validar_message(message)
+        except:
+            print('El mensaje es muy largo')
         self.time = time
         self.message = message
         self.sender = sender
+
+
 
     def get_time(self):
         return self.time
