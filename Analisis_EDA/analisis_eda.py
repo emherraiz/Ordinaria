@@ -28,4 +28,8 @@ train = pd.read_csv('train.csv')
 test = pd.read_csv('test.csv')
 ss = pd.read_csv('sample_submission.csv')
 
-print(train.head())
+print(train.isna().sum())
+train = train.dropna()
+
+# Ahora vemos como ya no hay valores nulos
+print(train.isna().sum())
