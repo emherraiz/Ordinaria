@@ -19,3 +19,13 @@ import os
 for dirname, _, filenames in os.walk('/kaggle/input'):
     for filename in filenames:
         print(os.path.join(dirname, filename))
+
+
+import numpy as np
+import pandas as pd
+
+train = pd.read_csv('train.csv')
+test = pd.read_csv('test.csv')
+ss = pd.read_csv('sample_submission.csv')
+
+print(train.head())
